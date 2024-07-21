@@ -162,11 +162,15 @@ class ShareableAdmonitionPlugin(BasePlugin):
         admonition_html_path = os.path.join(shared_dir, f'{share_name}.html')
         print(f"admonition_html_path: {admonition_html_path}")
         if os.path.exists(admonition_html_path):
-            raise ValueError(f'File {path} already exists. You have a duplicate admonition share name: {share_name}')
+            raise ValueError(f'File {admonition_html_path} already exists. You have a duplicate admonition share name: {share_name}')
         shareable_html_path = f'/shared/{share_name}.html'
-        full_page_url = config['site_url']+os.path.join('/', page.url, shareable_html_path)
-        page_url = config['site_url'] + full_page_url
-        backlink_url = config['site_url'] + f'/{page.url}'
+        full_page_url = os.path.join('/', page.url, shareable_html_path)
+        if 'site_url' in config and config['site_url']:
+            full_page_url = config['site_url'] + full_page_url
+            backlink_url = config['site_url'] + f'/{page.url}'
+        else:
+            backlink_url = f'/{page.url}'
+        
         
         if not title:
             title = 'Sharing information from this page'

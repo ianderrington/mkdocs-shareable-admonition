@@ -52,3 +52,10 @@ markdown_extensions:
   - pymdownx.tilde
 
 # Add additional MkDocs configuration as needed
+google_tag: !ENV GOOGLE_ANALYTICS_KEY
+
+extra_javascript:
+  - javascripts/copy-link.js
+
+extra_css:
+  - stylesheets/extra.css
