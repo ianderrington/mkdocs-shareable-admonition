@@ -11,9 +11,18 @@ The Shareable Admonition Plugin is a custom extension for MkDocs, a static site 
 
 To install the Shareable Admonition Plugin, you can use pip:
 
+
+https://pypi.org/project/mkdocs-shareable-admonition/0.1.1/
+
 ```bash
 pip install shareable-admonition-plugin
 ```
+
+**Note this seems to be broken**
+
+```bash
+pip install -e .
+``` will work until we fix the build package. 
 
 ## Configuration
 After installation, you need to activate the plugin in your mkdocs.yml configuration file:
