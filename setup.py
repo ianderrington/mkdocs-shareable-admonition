@@ -10,9 +10,9 @@ setup(
     long_description=long_description,
     long_description_content_type='text/markdown',
     keywords='mkdocs python markdown',
-    url='https://github.com/yourusername/mkdocs-shareable-admonition',  # Update this URL
+    url='https://github.com/ianderrington/mkdocs-shareable-admonition',  # Update this URL
     author='Your Name',  # Update with your name
-    author_email='your.email@example.com',  # Update with your email
+    author_email='ian.derrington@example.com',  # Update with your email
     license='MIT',
     python_requires='>=3.5',
     install_requires=[
