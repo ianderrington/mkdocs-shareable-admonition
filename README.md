@@ -1,7 +1,8 @@
-Shareable Admonition Plugin for MkDocs
+# Shareable Admonition Plugin for MkDocs
+
 The Shareable Admonition Plugin is a custom extension for MkDocs, a static site generator geared towards project documentation. This plugin enhances the documentation by allowing the inclusion of shareable admonitions with embedded images and descriptions directly within your Markdown files.
 
-Features
+## Features
 * Admonition with Images: Easily embed images within admonitions to make your documentation more engaging and informative.
 * Customizable Admonitions: Supports MkDocs' native admonition syntax with the added capability to include images and custom text.
 * Automatic Image and Text Extraction: Automatically extracts the first image and text from the admonition block for display.
@@ -11,7 +12,7 @@ Features
 To install the Shareable Admonition Plugin, you can use pip:
 
 ```bash
- pip install shareable-admonition-plugin
+pip install shareable-admonition-plugin
 ```
 
 ## Configuration
@@ -24,10 +25,8 @@ plugins:
   - search
   - shareable_admonition
 
-
 extra_javascript:
   - javascripts/copy-link.js
-
 
 google_tag: !ENV GOOGLE_ANALYTICS_KEY
 ```
